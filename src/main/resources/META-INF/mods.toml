@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+[[mods]]
+modId="spidersmakewebs"
+version="1.0"
+displayName="Spiders Make Webs"
+logoFile="spidersmakewebs.png"
+credits="My brain and the forge modders forum :)"
+authors="blu1980"
+description='''
+A mod that makes spiders and cave spiders make different elaborate webs and randomly place them around the world.
+'''
+[[dependencies.spidersmakewebs]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.spidersmakewebs]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
