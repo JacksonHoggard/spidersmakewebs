@@ -1,4 +1,4 @@
-package io.github.jacksonhoggard.spidersmakewebs;
+package me.jacksonhoggard.spidersmakewebs;
 
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.monster.Spider;
@@ -19,6 +19,6 @@ public class PlaceWebRandomGoal extends Goal {
 
     @Override
     public void start() {
-        spider.level.setBlockAndUpdate(spider.blockPosition(), Blocks.COBWEB.defaultBlockState());
+        getServerLevel(spider).setBlockAndUpdate(spider.blockPosition(), Blocks.COBWEB.defaultBlockState());
     }
 }

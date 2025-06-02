@@ -1,25 +1,22 @@
-modLoader="javafml"
-loaderVersion="[40,)"
-license="MIT"
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 [[mods]]
-modId="spidersmakewebs"
-version="1.0"
-displayName="Spiders Make Webs"
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
 logoFile="spidersmakewebs.png"
-credits="My brain and the forge modders forum :)"
-authors="blu1980"
-description='''
-A mod that makes spiders and cave spiders make different elaborate webs and randomly place them around the world.
-'''
-[[dependencies.spidersmakewebs]]
-    modId="forge"
-    mandatory=true
-    versionRange="[40,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.spidersmakewebs]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.18.2,1.19)"
-    ordering="NONE"
-    side="BOTH"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+[[dependencies."${mod_id}"]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
